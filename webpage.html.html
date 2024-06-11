@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipeeyyz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+   
+</head>
+<body>
+    <div class="navbar">
+        <h1>RecipeBook</h1>
+    </div>
+    <div class="container">
+        <div class="recipe-container">
+            <h2>Sambar</h2>
+            <H5>Dhaal,water,turmeric,salt</H5>
+            <p>Sambar is a South Indian lentil and vegetable stew made with pigeon pea lentils, tamarind and a unique spice blend called sambar powder. It is a staple dish in South Indian homes and is also equally popular and loved by many.
+            </p>
+            <button onclick="deleterecipe(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Recipe</h2>
+        <form>
+            <input type="text" placeholder="Recipe Name" id="recipe-name-input">
+            <input type="text" placeholder="Ingredients" id="ingredients-name-input">
+            <textarea id="recipe-description-input" placeholder="Short Description" rows="4" cols="50"></textarea>
+            <button id="add-recipe">ADD</button> 
+        <button id="cancel-popup">CANCEL</button>  </form>
+    </div>
+
+    <button class="add-button" id="add-popup">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
